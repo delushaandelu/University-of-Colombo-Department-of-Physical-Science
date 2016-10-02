@@ -26,15 +26,15 @@
             <div class="login-box animated fadeInDown">
                 <div class="login-body">
                     <div class="login-title"><strong>Log In</strong> to your account</div>
-                    <form action="index.html" class="form-horizontal" method="post">
+                    <form class="form-horizontal" method="post">
                     <div class="form-group">
                         <div class="col-md-12">
-                            <input type="text" class="form-control" placeholder="Username"/>
+                            <input type="text" class="form-control" placeholder="Username" name="uname"/>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-md-12">
-                            <input type="password" class="form-control" placeholder="Password"/>
+                            <input type="password" class="form-control" placeholder="Password" name="pword"/>
                         </div>
                     </div>
                     <div class="form-group">
@@ -42,7 +42,7 @@
                             <a href="#" class="btn btn-link btn-block">Forgot your password?</a>
                         </div>
                         <div class="col-md-6">
-                            <button class="btn btn-info btn-block">Log In</button>
+                            <button class="btn btn-info btn-block" type="submit" name="signin">Log In</button>
                         </div>
                     </div>
                     
@@ -61,6 +61,21 @@
         </div>
         
     </body>
+<?php
+include "config/database.php";
+    if(isset($_POST['signin'])){
+$username = $_POST['uname'];
+$password = $_POST['pword'];
+
+$result = mysqli_query($con, "SELECT * FROM user WHERE user='$username' AND password='$password'");
+$num = mysqli_num_rows($con,$result);
+if($num == 0){
+echo "Bad login, go <a href='index.php'>back</a>.";
+}else{
+header("Location: home.php");
+}
+    }
+?>
 </html>
 
 
