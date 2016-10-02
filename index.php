@@ -2,7 +2,7 @@
 <html lang="en" class="body-full-height">
     <head>        
         <!-- META SECTION -->
-        <title>Joli Admin - Responsive Bootstrap Admin Template</title>            
+        <title>UOC Department of Physical</title>            
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -16,16 +16,20 @@
     </head>
     <body>
         
-        <div class="login-container">
         
+        <div class="login-container">
+        </br></br></br></br></br>
+            <div id="name">
+                <h2 align="center" style="color:white;">Univeristy of Colombo</h2>
+                <h3 align="center" style="color:white;">Department of Physical</h3>
+            </div>
             <div class="login-box animated fadeInDown">
-                <div class="login-logo"></div>
                 <div class="login-body">
                     <div class="login-title"><strong>Log In</strong> to your account</div>
                     <form action="index.html" class="form-horizontal" method="post">
                     <div class="form-group">
                         <div class="col-md-12">
-                            <input type="text" class="form-control" placeholder="E-mail"/>
+                            <input type="text" class="form-control" placeholder="Username"/>
                         </div>
                     </div>
                     <div class="form-group">
@@ -41,18 +45,7 @@
                             <button class="btn btn-info btn-block">Log In</button>
                         </div>
                     </div>
-                    <div class="login-or">OR</div>
-                    <div class="form-group">
-                        <div class="col-md-4">
-                            <button class="btn btn-info btn-block btn-twitter"><span class="fa fa-twitter"></span> Twitter</button>
-                        </div>
-                        <div class="col-md-4">
-                            <button class="btn btn-info btn-block btn-facebook"><span class="fa fa-facebook"></span> Facebook</button>
-                        </div>
-                        <div class="col-md-4">                            
-                            <button class="btn btn-info btn-block btn-google"><span class="fa fa-google-plus"></span> Google</button>
-                        </div>
-                    </div>
+                    
                     <div class="login-subtitle">
                         Don't have an account yet? <a href="#">Create an account</a>
                     </div>
@@ -60,12 +53,7 @@
                 </div>
                 <div class="login-footer">
                     <div class="pull-left">
-                        &copy; 2014 AppName
-                    </div>
-                    <div class="pull-right">
-                        <a href="#">About</a> |
-                        <a href="#">Privacy</a> |
-                        <a href="#">Contact Us</a>
+                        &copy; University of Colombo School of Computing
                     </div>
                 </div>
             </div>
