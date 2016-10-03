@@ -21,7 +21,7 @@
         </br></br></br></br></br>
             <div id="name">
                 <h2 align="center" style="color:white;">Univeristy of Colombo</h2>
-                <h3 align="center" style="color:white;">Department of Physical Education</h3>
+                <h3 align="center" style="color:white;">Department of Physical</h3>
             </div>
             <div class="login-box animated fadeInDown">
                 <div class="login-body">
@@ -77,3 +77,9 @@ header("Location: home.php");
     }
 ?>
 </html>
+
+
+
+
+
+

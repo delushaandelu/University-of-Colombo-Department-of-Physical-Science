@@ -1,8 +1,8 @@
 <?php
-$host = "us-cdbr-azure-southcentral-f.cloudapp.net";
+$host = "localhost";
 $db_name = "sports";
-$username = "b2c71b9da35067";
-$password = "b30031a5";
+$username = "root";
+$password = "";
  
 try {
     $con = new PDO("mysql:host={$host};dbname={$db_name}", $username, $password);
