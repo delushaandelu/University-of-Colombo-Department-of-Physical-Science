@@ -77,9 +77,3 @@ header("Location: home.php");
     }
 ?>
 </html>
-
-
-
-
-
-
